@@ -1,14 +1,17 @@
-##Summary
+==================Summary==================
+
 This is a research project done in 2017 in University of Melbourne. It aims to make improvements on LEACH protocol, which is a cluster-based routing protocol in Wireless Sensor Network. The project is simulated by MATLAB.
 
 
-##Strategies
+==================Strategies==================
+
 EMH-LEACH protocol is proposed to modify drawbacks of LEACH from three main aspects:
 1) change the homogeneous network model to heterogeneous network model;
 2) modify the Cluster Heads selection threshold formular in set-up phase (by considering the remaining energy of each node when selecting the Cluster Heads); 
 3) change the single-hop transmission to multi-hop transmission between Cluster Heads and the Base Station (by considering the transmission distance when selecting the Cluster Heads).
 
-##Simulation and Performance Review
+==================Simulation and Performance Review==================
+
 There are several performance metrics used here to evaluate the newly proposed EMH- LEACH:
 1) The round number of the first dead node (FND): FND can be used to evaluate the stability of the network. Because when the first node dies, other nodes begin to die one after another. This means that fewer nodes are involved in gathering and forwarding data in the network, and the burden of them become heavier. The more work they do, the faster they die. This will impact the performance of the whole network.
 2) The round number of the half dead node (HND): HND can be used to evaluate the quality of the network. Because if in a small area, nodes are closed to each other, the data detected by adjacent nodes is likely to be similar. At this time, the performance of the whole network will not be impacted even if some nodes die. It only matters when quite a few nodes are not living any more.
